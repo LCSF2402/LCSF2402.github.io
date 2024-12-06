@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #000;
+    padding: 20px 0;
+    margin: 0;
+}
+
+
+
+header .logo {
+    width: 120px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+
+.intro {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.about-preview {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.btn-Lmore {
+    text-align: center;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Style rules for mobile viewport */
+
+@media (max-width: 768px) {
+    header nav {
+        display: none; /* Hide the regular navigation on small screens */
+    }
+
+    .mobile-nav {
+        display: block;
+        position: relative;
+    }
+
+    .mobile-nav #menu-link {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .mobile-nav.active #menu-link {
+        display: flex;
+    }
+
+    .menu-icon {
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
